@@ -15,38 +15,93 @@
 				Height="20"
 				Fill="Gray">
 		</Rectangle>
-		<Grid ShowGridLines="True"
-			  ColumnDefinitions="Auto, *"
+		<Grid ShowGridLines="False"
+			  ColumnDefinitions="*, 3*"
 			  Margin="10">
-			
+
 			<!-- Left Side -->
-			<StackPanel Grid.Column="0">
+			<Grid ShowGridLines="False"
+				  Grid.Column="0"
+				  RowDefinitions="*, *">
+
 				<!-- Profile Picture -->
-				<Border Background="LightGray"
-						BorderThickness="5">
-					<Rectangle Grid.Column="0"
-							   Grid.Row="0"
-							   Width="200"
-							   Height="200"
-							   Fill="Gray">
-					</Rectangle>
+				<Border Background="#333"
+						BorderBrush="#222"
+						BorderThickness="5"
+						CornerRadius="10">
+					<Image Stretch="Uniform"
+						   Source="/Assets/portrait-placeholder.png">
+					</Image>
 				</Border>
 
 				<!-- Basic Information -->
-				<TextBox HorizontalAlignment="Stretch"
-						 Margin="5"
-						 Watermark="Name">
-				</TextBox>
-				<TextBox HorizontalAlignment="Stretch"
-						 Margin="5"
-						 Watermark="Species (Subspecies)">
-				</TextBox>
-			</StackPanel>
+				<StackPanel Grid.Row="1">
+					<TextBox HorizontalAlignment="Stretch"
+							 Margin="5"
+							 Watermark="Name">
+					</TextBox>
+					<TextBox HorizontalAlignment="Stretch"
+							 Margin="5"
+							 Watermark="Species (Subspecies)">
+					</TextBox>
+				</StackPanel>
+			</Grid>
 
 			<!-- Detailed Information - Right Side -->
-			<StackPanel Grid.Column="1"
-						Margin="50, 0">
-			</StackPanel>
+			<Grid ShowGridLines="False"
+				  Grid.Column="1"
+				  ColumnDefinitions="2*, *, 2*"
+				  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
+				  Margin="35, 0">
+				<TextBlock Grid.Column="0"
+						   Grid.Row="0">
+					Sex
+				</TextBlock>
+				<TextBox Grid.Column="0"
+						 Grid.Row="1"
+						 Watermark="Sex">
+				</TextBox>
+				<TextBlock Grid.Column="2"
+						   Grid.Row="0">
+					Height (m)
+				</TextBlock>
+				<TextBox Grid.Column="2"
+						 Grid.Row="1"
+						 Watermark="Height">
+				</TextBox>
+				<TextBlock Grid.Column="0"
+						   Grid.Row="2">
+					Age (Years)
+				</TextBlock>
+				<TextBox Grid.Column="0"
+						 Grid.Row="3"
+						 Watermark="Age">
+				</TextBox>
+				<TextBlock Grid.Column="2"
+						   Grid.Row="2">
+					Weight (kg)
+				</TextBlock>
+				<TextBox Grid.Column="2"
+						 Grid.Row="3"
+						 Watermark="Weight">
+				</TextBox>
+				<TextBlock Grid.Column="0"
+						   Grid.Row="4">
+					Eye Color
+				</TextBlock>
+				<TextBox Grid.Column="0"
+						 Grid.Row="5"
+						 Watermark="Color">
+				</TextBox>
+				<TextBlock Grid.Column="2"
+						   Grid.Row="4">
+					Body Color(s)
+				</TextBlock>
+				<TextBox Grid.Column="2"
+						 Grid.Row="5"
+						 Watermark="Color">
+				</TextBox>
+			</Grid>
 		</Grid>
 	</DockPanel>
 </UserControl>
