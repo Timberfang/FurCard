@@ -34,20 +34,18 @@ namespace FurCard.Models
         public void Export(string OutPath, JsonSerializerOptions options)
         {
             // Check if OutPath is null or empty
-            if (string.IsNullOrEmpty(OutPath)) { throw new ArgumentOutOfRangeException("OutPath cannot be null or empty."); }
+            ArgumentOutOfRangeException.ThrowIfNullOrEmpty(OutPath);
 
-            else {
-                // Create parent directory
-                Directory.CreateDirectory(Path.GetDirectoryName(OutPath)!);
+            // Create parent directory
+            Directory.CreateDirectory(Path.GetDirectoryName(OutPath)!);
 
-                // Serialize JSON
-                string JsonString;
-                if (options != null) { JsonString = JsonSerializer.Serialize(this, options); }
-                else { JsonString = JsonSerializer.Serialize(this, JsonSerializerOptions.Default); }
+            // Serialize JSON
+            string JsonString;
+            if (options != null) { JsonString = JsonSerializer.Serialize(this, options); }
+            else { JsonString = JsonSerializer.Serialize(this, JsonSerializerOptions.Default); }
 
-                // Write JSON
-                File.WriteAllText(OutPath, JsonString);
-            }
+            // Write JSON
+            File.WriteAllText(OutPath, JsonString);
         }
     }
 
