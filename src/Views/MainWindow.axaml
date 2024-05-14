@@ -3,7 +3,7 @@
         xmlns:vm="using:FurCard.ViewModels"
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-        mc:Ignorable="d" d:DesignWidth="770" d:DesignHeight="440"
+        mc:Ignorable="d" d:DesignWidth="750" d:DesignHeight="500"
 		xmlns:views="clr-namespace:FurCard.Views"
         x:Class="FurCard.Views.MainWindow"
         x:DataType="vm:MainWindowViewModel"
