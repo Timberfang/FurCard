@@ -19,6 +19,11 @@ namespace FurCard.Models
         public float Height { get; set; } = Height;
         public float Weight { get; set; } = Weight;
 
+        // TODO: Create PhysicalAttribute class, describing character's physical characteristics (Eye color, Fur/Scale/Feather coloration, build, etc.)
+        // TODO: Create Personality class, describing traits, hobbies, likes, dislikes, etc.
+        // TODO: Add Image class that checks if image exists and can return the type of image (JPEG, PNG, WEBP, etc.)
+        // TODO: Add contact information class - unrelated to character itself, but needed for card. Can accept a name
+
         public override string ToString()
         {
             // Build character card
