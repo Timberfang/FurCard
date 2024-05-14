@@ -9,21 +9,15 @@ using System.Drawing;
 
 namespace FurCard.Models
 {
-    public class Character
+    public class Character(string Name, string Species, CharSex Sex = CharSex.Unknown, int Age = 0, float Height = 0, float Weight = 0)
     {
-        public string Name { get; set; } = string.Empty;
-        public string Species { get; set; } = string.Empty;
-        public int Age { get; set; } = 0;
-        public string Sex { get; set; } = string.Empty;
-        public float Height { get; set; } = 0;
-        public float Weight { get; set; } = 0;
-        public Color EyeColor { get; set; } = Color.Empty;
-        public List<Color> BodyColors { get; set; } = new List<Color>();
-        // public List<string> PhysicalTraits { get; set; } = new List<string>();
-        // public List<string> MentalTraits { get; set; } = new List<string>();
-        // public List<string> Skills { get; set; } = new List<string>();
-        // public List<string> Equipment { get; set; } = new List<string>();
-        public string Background { get; set; } = string.Empty;
+        public Guid ID { get; set; } = Guid.NewGuid();
+        public string Name { get; set; } = Name;
+        public string Species { get; set; } = Species;
+        public int Age { get; set; } = Age;
+        public CharSex Sex { get; set; } = Sex;
+        public float Height { get; set; } = Height;
+        public float Weight { get; set; } = Weight;
 
         public override string ToString()
         {
@@ -32,17 +26,6 @@ namespace FurCard.Models
             Character.AppendLine($"{Name} ({Species}):");
             Character.AppendLine($"\tAge: {Age}, Sex: ${Sex}");
             Character.AppendLine($"\tHeight: {Height}m, Weight: ${Weight}kg");
-            Character.AppendLine($"\tEye Color: ${EyeColor.Name}");
-            Character.AppendLine($"\tBody Color(s):");
-
-            // List all body colors, but don't have a comma for the last color.
-            for (int i = 0; i <= BodyColors.Count; i++)
-            {
-                if (i < BodyColors.Count) { Character.AppendLine($"\t\t{BodyColors[i].Name},"); }
-                else { Character.AppendLine($"\t\t{BodyColors[i].Name}"); }
-            }
-
-            Character.AppendLine($"\tBackground: {Background}");
 
             // Return character
             return Character.ToString();
@@ -66,5 +49,7 @@ namespace FurCard.Models
                 File.WriteAllText(OutPath, JsonString);
             }
         }
-    }   
+    }
+
+    public enum CharSex { Unknown, Male, Female, Nonbinary, Other }
 }
