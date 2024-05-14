@@ -22,7 +22,7 @@ namespace FurCard.Models
         public override string ToString()
         {
             // Build character card
-            StringBuilder Character = new StringBuilder();
+            StringBuilder Character = new();
             Character.AppendLine($"{Name} ({Species}):");
             Character.AppendLine($"\tAge: {Age}, Sex: ${Sex}");
             Character.AppendLine($"\tHeight: {Height}m, Weight: ${Weight}kg");
