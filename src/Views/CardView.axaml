@@ -1,0 +1,52 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="720" d:DesignHeight="450"
+             x:Class="FurCard.Views.CardView">
+	<DockPanel>
+		<Button DockPanel.Dock="Bottom"
+				HorizontalAlignment="Stretch"
+				HorizontalContentAlignment="Center">
+			New Card
+		</Button>
+		<Rectangle DockPanel.Dock="Top"
+				HorizontalAlignment="Stretch"
+				Height="20"
+				Fill="Gray">
+		</Rectangle>
+		<Grid ShowGridLines="True"
+			  ColumnDefinitions="Auto, *"
+			  Margin="10">
+			
+			<!-- Left Side -->
+			<StackPanel Grid.Column="0">
+				<!-- Profile Picture -->
+				<Border Background="LightGray"
+						BorderThickness="5">
+					<Rectangle Grid.Column="0"
+							   Grid.Row="0"
+							   Width="200"
+							   Height="200"
+							   Fill="Gray">
+					</Rectangle>
+				</Border>
+
+				<!-- Basic Information -->
+				<TextBox HorizontalAlignment="Stretch"
+						 Margin="5"
+						 Watermark="Name">
+				</TextBox>
+				<TextBox HorizontalAlignment="Stretch"
+						 Margin="5"
+						 Watermark="Species (Subspecies)">
+				</TextBox>
+			</StackPanel>
+
+			<!-- Detailed Information - Right Side -->
+			<StackPanel Grid.Column="1"
+						Margin="50, 0">
+			</StackPanel>
+		</Grid>
+	</DockPanel>
+</UserControl>
