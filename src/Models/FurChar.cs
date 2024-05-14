@@ -9,13 +9,13 @@ using System.Drawing;
 
 namespace FurCard.Models
 {
-    public class Character(string Name, string Species, CharSex Sex = CharSex.Unknown, int Age = 0, float Height = 0, float Weight = 0)
+    public class Character(string Name, string Species, CharGender Gender = CharGender.Unknown, int Age = 0, float Height = 0, float Weight = 0)
     {
         public Guid ID { get; set; } = Guid.NewGuid();
         public string Name { get; set; } = Name;
         public string Species { get; set; } = Species;
         public int Age { get; set; } = Age;
-        public CharSex Sex { get; set; } = Sex;
+        public CharGender Gender { get; set; } = Gender;
         public float Height { get; set; } = Height;
         public float Weight { get; set; } = Weight;
 
@@ -29,7 +29,7 @@ namespace FurCard.Models
             // Build character card
             StringBuilder Character = new();
             Character.AppendLine($"{Name} ({Species}):");
-            Character.AppendLine($"\tAge: {Age}, Sex: ${Sex}");
+            Character.AppendLine($"\tAge: {Age}, Gender: ${Gender}");
             Character.AppendLine($"\tHeight: {Height}m, Weight: ${Weight}kg");
 
             // Return character
@@ -54,5 +54,5 @@ namespace FurCard.Models
         }
     }
 
-    public enum CharSex { Unknown, Male, Female, Nonbinary, Other }
+    public enum CharGender { Unknown, Male, Female, Nonbinary, Other }
 }
