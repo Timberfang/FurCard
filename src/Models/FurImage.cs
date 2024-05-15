@@ -26,9 +26,9 @@ namespace FurCard.Models
 
         private static async Task<Bitmap> GetBitmapFromURL(Uri URL)
         {
-            HttpClient client = new();
+            HttpClient Client = new();
 
-            using Stream ImageIn = await client.GetStreamAsync(URL);
+            using Stream ImageIn = await Client.GetStreamAsync(URL);
 
             return new Bitmap(ImageIn);
         }
