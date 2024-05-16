@@ -2,12 +2,13 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="720" d:DesignHeight="450"
+             mc:Ignorable="d" d:DesignWidth="750" d:DesignHeight="500"
              x:Class="FurCard.Views.CardView">
 	<DockPanel>
 		<Button DockPanel.Dock="Bottom"
 				HorizontalAlignment="Stretch"
-				HorizontalContentAlignment="Center">
+				HorizontalContentAlignment="Center"
+				Height="30">
 			New Card
 		</Button>
 		<Rectangle DockPanel.Dock="Top"
@@ -16,7 +17,7 @@
 				Fill="Gray">
 		</Rectangle>
 		<Grid ShowGridLines="False"
-			  ColumnDefinitions="*, 3*"
+			  ColumnDefinitions="*, 2.5*"
 			  Margin="10">
 
 			<!-- Left Side -->

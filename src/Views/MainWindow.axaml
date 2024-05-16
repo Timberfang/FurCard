@@ -9,8 +9,8 @@
         x:DataType="vm:MainWindowViewModel"
         Icon="/Assets/avalonia-logo.ico"
         Title="FurCard"
-		MinHeight="240"
-		MinWidth="420">
+		MinWidth="280"
+		MinHeight="220">
 
     <Design.DataContext>
         <!-- This only sets the DataContext for the previewer in an IDE,
