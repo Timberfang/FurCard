@@ -41,10 +41,19 @@
 							 Margin="5"
 							 Watermark="Name">
 					</TextBox>
-					<TextBox HorizontalAlignment="Stretch"
-							 Margin="5"
-							 Watermark="Species (Subspecies)">
-					</TextBox>
+					<Grid ColumnDefinitions="*, 25">
+						<TextBox Grid.Column="0"
+								 HorizontalAlignment="Stretch"
+								 Margin="5"
+								 Watermark="Species (Subspecies)">
+						</TextBox>
+						<TextBlock Grid.Column="1"
+								   HorizontalAlignment="Right"
+								   VerticalAlignment="Center"
+								   FontSize="20"
+								   Text="❔">
+						</TextBlock>
+					</Grid>
 				</StackPanel>
 			</Grid>
 
