@@ -49,60 +49,6 @@
 			</Grid>
 
 			<!-- Detailed Information - Right Side -->
-			<Grid ShowGridLines="False"
-				  Grid.Column="1"
-				  ColumnDefinitions="2*, *, 2*"
-				  RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto"
-				  Margin="35, 0">
-				<TextBlock Grid.Column="0"
-						   Grid.Row="0">
-					Sex
-				</TextBlock>
-				<TextBox Grid.Column="0"
-						 Grid.Row="1"
-						 Watermark="Sex">
-				</TextBox>
-				<TextBlock Grid.Column="2"
-						   Grid.Row="0">
-					Height (m)
-				</TextBlock>
-				<TextBox Grid.Column="2"
-						 Grid.Row="1"
-						 Watermark="Height">
-				</TextBox>
-				<TextBlock Grid.Column="0"
-						   Grid.Row="2">
-					Age (Years)
-				</TextBlock>
-				<TextBox Grid.Column="0"
-						 Grid.Row="3"
-						 Watermark="Age">
-				</TextBox>
-				<TextBlock Grid.Column="2"
-						   Grid.Row="2">
-					Weight (kg)
-				</TextBlock>
-				<TextBox Grid.Column="2"
-						 Grid.Row="3"
-						 Watermark="Weight">
-				</TextBox>
-				<TextBlock Grid.Column="0"
-						   Grid.Row="4">
-					Eye Color
-				</TextBlock>
-				<TextBox Grid.Column="0"
-						 Grid.Row="5"
-						 Watermark="Color">
-				</TextBox>
-				<TextBlock Grid.Column="2"
-						   Grid.Row="4">
-					Body Color(s)
-				</TextBlock>
-				<TextBox Grid.Column="2"
-						 Grid.Row="5"
-						 Watermark="Color">
-				</TextBox>
-			</Grid>
 		</Grid>
 	</DockPanel>
 </UserControl>
