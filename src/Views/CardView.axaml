@@ -3,172 +3,93 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="1012" d:DesignHeight="638"
+             mc:Ignorable="d" d:DesignWidth="1016" d:DesignHeight="638"
              x:Class="FurCard.Views.CardView">
 	
+		<!-- TODO: Replace hardcoded colors with dynamic resources -->
+		<!-- TODO: Find a way to handle resizing of resources nicely -->
 		<DockPanel>
-			<Rectangle DockPanel.Dock="Top"
-					HorizontalAlignment="Stretch"
-					Height="40"
-					Fill="#444">
-			</Rectangle>
-			<Rectangle DockPanel.Dock="Bottom"
-					HorizontalAlignment="Stretch"
-					Height="40"
-					Fill="#444">
-			</Rectangle>
-			<Viewbox>
-				<Border Background="{DynamicResource BackgroundBrush}"
-						BorderBrush="{DynamicResource BorderBrush}"
-						BorderThickness="5"
+			<!-- TODO: Change to a control other than a border -->
+			<Border 
+				DockPanel.Dock="Top"
+				Height="75"
+				Background="#516D7A">
+				<TextBlock
+					VerticalAlignment="Center"
+					HorizontalAlignment="Center"
+					FontSize="35"
+					FontWeight="Bold"
+					Text="Furry ID Card 🐾"/>
+			</Border>
+			<Rectangle
+				DockPanel.Dock="Bottom"
+				Height="75"
+				Fill="#516D7A"/>
+			<Grid
+				ShowGridLines="False"
+				ColumnDefinitions="*, 25, 2*">
+				<Rectangle
+					Grid.Column="1"
+					Fill="#93ACB8"/>
+				<StackPanel
+					Grid.Column="0"
+					Spacing="10">
+					<!-- Profile Picture -->
+					<Border
+						Background="#D2DDE1"
+						BorderBrush="#D2DDE1"
+						BorderThickness="15"
 						CornerRadius="25"
-						Margin="10">
-					<Grid ShowGridLines="False"
-						  ColumnDefinitions="Auto, Auto"
-						  Margin="25">
-						<StackPanel Grid.Column="0"
-									Spacing="10">
-
-							<!-- Profile Picture -->
-							<Border Background="{DynamicResource BackgroundBrush}"
-									BorderBrush="{DynamicResource BorderBrush}"
-									BorderThickness="5"
-									CornerRadius="10">
-								<Image Stretch="Uniform"
-										Source="/Assets/portrait-placeholder.png">
-								</Image>
-							</Border>
-
-							<TextBox Watermark="Name"
-									 FontSize="24"
-									 TextWrapping="Wrap"
-									 AcceptsReturn="True">
-							</TextBox>
-
-							<Grid ShowGridLines="False"
-								  ColumnDefinitions="*, Auto">
-								<TextBox Grid.Column="0"
-										 Watermark="Species (Subspecies)"
-										 FontSize="18">
-								</TextBox>
-								<TextBlock Grid.Column="1"
-										   VerticalAlignment="Center"
-										   Text="❔"
-										   FontSize="22">
-								</TextBlock>
-							</Grid>
-						</StackPanel>
-
-						<Grid Grid.Column="1"
-							  ShowGridLines="False"
-							  ColumnDefinitions="Auto, 100, 50, Auto, 100"
-							  RowDefinitions="Auto, Auto, Auto, Auto, *"
-							  Margin="15">
-
-							<TextBlock Grid.Column="0"
-									   Grid.Row="0"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="Age:">
-							</TextBlock>
-							<TextBox Grid.Column="1"
-									 Grid.Row="0"
-									 Margin="0, 10"
-									 FontSize="18"
-									 Watermark="Age">
-							</TextBox>
-
-							<TextBlock Grid.Column="0"
-									   Grid.Row="1"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="Eyes:">
-							</TextBlock>
-							<TextBox Grid.Column="1"
-									 Grid.Row="1"
-									 Margin="0, 10"
-									 FontSize="18"
-									 Watermark="Color">
-							</TextBox>
-
-							<TextBlock Grid.Column="3"
-									   Grid.Row="0"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="Height (m):">
-							</TextBlock>
-							<TextBox Grid.Column="4"
-									 Grid.Row="0"
-									 Margin="0, 10"
-									 FontSize="18"
-									 Watermark="Meters">
-							</TextBox>
-
-							<TextBlock Grid.Column="3"
-									   Grid.Row="1"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="Weight (kg):">
-							</TextBlock>
-							<TextBox Grid.Column="4"
-									 Grid.Row="1"
-									 Margin="0, 10"
-									 FontSize="18"
-									 Watermark="Kilograms">
-							</TextBox>
-
-							<TextBlock Grid.Column="0"
-									   Grid.Row="2"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="D.O.C.:">
-							</TextBlock>
-							<TextBox Grid.Column="1"
-									 Grid.Row="2"
-									 Margin="0, 10"
-									 Grid.ColumnSpan="4"
-									 FontSize="18"
-									 Watermark="Date of Creation">
-							</TextBox>
-
-							<!-- TODO: Change to bind "fur" to feathers or scales as well -->
-							<TextBlock Grid.Column="0"
-									   Grid.Row="3"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Center"
-									   Text="Fur:">
-							</TextBlock>
-							<TextBox Grid.Column="1"
-									 Grid.Row="3"
-									 Margin="0, 10"
-									 Grid.ColumnSpan="4"
-									 FontSize="18"
-									 Watermark="Color 1, Color 2, Color 3...">
-							</TextBox>
-
-							<TextBlock Grid.Column="0"
-									   Grid.Row="4"
-									   Margin="0, 10"
-									   FontSize="18"
-									   VerticalAlignment="Top"
-									   Text="Bio:">
-							</TextBlock>
-							<TextBox Grid.Column="1"
-									 Grid.Row="4"
-									 Margin="0, 10"
-									 Grid.ColumnSpan="4"
-									 FontSize="18"
-									 Watermark="Biography information...">
-							</TextBox>
-						</Grid>
+						Margin="35, 35, 35, 0"
+						HorizontalAlignment="Center">
+						<Border
+							ClipToBounds="True"
+							CornerRadius="25">
+							<Image
+								Stretch="Uniform"
+								Source="/Assets/portrait-placeholder.png"/>
+						</Border>
+					</Border>
+					<!-- Name -->
+					<TextBox
+						TextWrapping="Wrap"
+						FontSize="28"
+						FontWeight="Bold"
+						Watermark="Name"
+						Margin="20, 10, 20, 0"/>
+					<!-- Species | Age | Sex -->
+					<Grid
+						ColumnDefinitions="2*, Auto, *, Auto, *,"
+						Margin="20, 0">
+						<TextBox
+							Grid.Column="0"
+							TextWrapping="Wrap"
+							FontSize="20"
+							Watermark="Species"/>
+						<TextBlock
+							Grid.Column="1"
+							TextWrapping="Wrap"
+							FontSize="20"
+							VerticalAlignment="Center"
+							HorizontalAlignment="Center"
+							Text="‒"/>
+						<TextBox
+							Grid.Column="2"
+							FontSize="20"
+							Watermark="Age"/>
+						<TextBlock
+							Grid.Column="3"
+							FontSize="20"
+							VerticalAlignment="Center"
+							HorizontalAlignment="Center"
+							Text="‒"/>
+						<TextBox
+							Grid.Column="4"
+							TextWrapping="Wrap"
+							FontSize="20"
+							Watermark="Sex"/>
 					</Grid>
-				</Border>
-			</Viewbox>
+				</StackPanel>
+			</Grid>
 		</DockPanel>
 </UserControl>
