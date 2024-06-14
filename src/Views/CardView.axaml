@@ -22,10 +22,20 @@
 					FontWeight="Bold"
 					Text="Furry ID Card 🐾"/>
 			</Border>
-			<Rectangle
+			<!-- Bottom Border -->
+			<Border
 				DockPanel.Dock="Bottom"
 				Height="75"
-				Fill="#516D7A"/>
+				Background="#516D7A">
+				<!-- TODO: Bind LICENSE ID to a GUID variable -->
+				<TextBlock
+					VerticalAlignment="Bottom"
+					HorizontalAlignment="Left"
+					FontSize="20"
+					FontWeight="Bold"
+					Margin="15"
+					Text="License ID 15280229-fc88-43c0-bfaa-2da1ece62e51"/>
+			</Border>
 			<Grid
 				ShowGridLines="False"
 				ColumnDefinitions="*, 25, 2*">
