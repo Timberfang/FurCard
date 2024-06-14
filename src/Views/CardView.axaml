@@ -10,6 +10,7 @@
 		<!-- TODO: Find a way to handle resizing of resources nicely -->
 		<DockPanel>
 			<!-- TODO: Change to a control other than a border -->
+			<!-- Top Border -->
 			<Border 
 				DockPanel.Dock="Top"
 				Height="75"
@@ -28,9 +29,11 @@
 			<Grid
 				ShowGridLines="False"
 				ColumnDefinitions="*, 25, 2*">
+				<!-- Divider -->
 				<Rectangle
 					Grid.Column="1"
 					Fill="#93ACB8"/>
+				<!-- Left-Hand Info -->
 				<StackPanel
 					Grid.Column="0"
 					Spacing="10">
@@ -83,6 +86,7 @@
 							VerticalAlignment="Center"
 							HorizontalAlignment="Center"
 							Text="-"/>
+						<!-- TODO: Make this a drop-down? -->
 						<TextBox
 							Grid.Column="4"
 							TextWrapping="Wrap"
