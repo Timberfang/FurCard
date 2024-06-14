@@ -1,243 +1,242 @@
-
 <UserControl xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
              mc:Ignorable="d" d:DesignWidth="1016" d:DesignHeight="638"
              x:Class="FurCard.Views.CardView">
-	
-		<!-- TODO: Replace hardcoded colors with dynamic resources -->
-		<!-- TODO: Find a way to handle resizing of resources nicely -->
-		<DockPanel>
-			<!-- TODO: Change to a control other than a border -->
-			<!-- Top Border -->
-			<Border 
-				DockPanel.Dock="Top"
-				Height="75"
-				Background="#516D7A">
-				<TextBlock
-					VerticalAlignment="Center"
-					HorizontalAlignment="Center"
-					FontSize="35"
-					FontWeight="Bold"
-					Text="Furry ID Card 🐾"/>
-			</Border>
-			<!-- Bottom Border -->
-			<Border
-				DockPanel.Dock="Bottom"
-				Height="75"
-				Background="#516D7A">
-				<!-- TODO: Bind LICENSE ID to a GUID variable -->
-				<TextBlock
-					VerticalAlignment="Bottom"
-					HorizontalAlignment="Left"
-					FontSize="20"
-					FontWeight="Bold"
-					Margin="15"
-					Text="License ID 15280229-fc88-43c0-bfaa-2da1ece62e51"/>
-			</Border>
-			<Grid
-				ShowGridLines="False"
-				ColumnDefinitions="*, 25, 2*">
-				<!-- Divider -->
-				<Rectangle
-					Grid.Column="1"
-					Fill="#93ACB8"/>
-				<!-- Left-Hand Info -->
-				<StackPanel
-					Grid.Column="0"
-					Spacing="10">
-					<!-- Profile Picture -->
+
+	<!-- TODO: Replace hardcoded colors with dynamic resources -->
+	<!-- TODO: Find a way to handle resizing of resources nicely -->
+	<DockPanel>
+		<!-- TODO: Change to a control other than a border -->
+		<!-- Top Border -->
+		<Border
+			DockPanel.Dock="Top"
+			Height="75"
+			Background="#516D7A">
+			<TextBlock
+				VerticalAlignment="Center"
+				HorizontalAlignment="Center"
+				FontSize="35"
+				FontWeight="Bold"
+				Text="Furry ID Card 🐾"/>
+		</Border>
+		<!-- Bottom Border -->
+		<Border
+			DockPanel.Dock="Bottom"
+			Height="75"
+			Background="#516D7A">
+			<!-- TODO: Bind LICENSE ID to a GUID variable -->
+			<TextBlock
+				VerticalAlignment="Bottom"
+				HorizontalAlignment="Left"
+				FontSize="20"
+				FontWeight="Bold"
+				Margin="15"
+				Text="License ID 15280229-fc88-43c0-bfaa-2da1ece62e51"/>
+		</Border>
+		<Grid
+			ShowGridLines="False"
+			ColumnDefinitions="*, 25, 2*">
+			<!-- Divider -->
+			<Rectangle
+				Grid.Column="1"
+				Fill="#93ACB8"/>
+			<!-- Left-Hand Info -->
+			<StackPanel
+				Grid.Column="0"
+				Spacing="10">
+				<!-- Profile Picture -->
+				<Border
+					Background="#D2DDE1"
+					BorderBrush="#D2DDE1"
+					BorderThickness="15"
+					CornerRadius="25"
+					Margin="35, 35, 35, 0"
+					HorizontalAlignment="Center">
 					<Border
+						ClipToBounds="True"
+						CornerRadius="25">
+						<Image
+							Stretch="Uniform"
+							Source="/Assets/portrait-placeholder.png"/>
+					</Border>
+				</Border>
+				<!-- Name -->
+				<TextBox
+					TextWrapping="Wrap"
+					FontSize="28"
+					FontWeight="Bold"
+					Watermark="Name"
+					Margin="20, 10, 20, 0"/>
+				<!-- Species | Age | Sex -->
+				<Grid
+					ColumnDefinitions="2*, Auto, *, Auto, *,"
+					Margin="20, 0">
+					<TextBox
+						Grid.Column="0"
+						TextWrapping="Wrap"
+						FontSize="20"
+						Watermark="Species"/>
+					<TextBlock
+						Grid.Column="1"
+						TextWrapping="Wrap"
+						FontSize="20"
+						VerticalAlignment="Center"
+						HorizontalAlignment="Center"
+						Text="-"/>
+					<TextBox
+						Grid.Column="2"
+						FontSize="20"
+						Watermark="Age"/>
+					<TextBlock
+						Grid.Column="3"
+						FontSize="20"
+						VerticalAlignment="Center"
+						HorizontalAlignment="Center"
+						Text="-"/>
+					<!-- TODO: Make this a drop-down? -->
+					<TextBox
+						Grid.Column="4"
+						TextWrapping="Wrap"
+						FontSize="20"
+						Watermark="Sex"/>
+				</Grid>
+			</StackPanel>
+			<!-- Right-Hand Info -->
+			<Grid Grid.Column="2"
+				  ShowGridLines="True"
+				  ColumnDefinitions="2*, *"
+				  RowDefinitions="Auto, Auto, Auto, *">
+				<!-- Left Column -->
+				<!-- Owner -->
+				<StackPanel Grid.Column="0"
+							Grid.Row="0"
+							Margin="20, 10, 20, 20">
+					<TextBlock Grid.Column="0"
+							   FontSize="28"
+							   Foreground="#4d91b2"
+							   Text="Owner"
+								   />
+					<TextBox Grid.Column="0"
+							 FontSize="20"
+							 FontStyle="Italic"
+							 Watermark="Owner"
+							 Margin="0, 0, 0, 0"/>
+				</StackPanel>
+				<!-- Eye Color -->
+				<StackPanel Grid.Column="0"
+							Grid.Row="1"
+							Margin="20, 0">
+					<TextBlock Grid.Column="0"
+							   FontSize="24"
+							   Foreground="#4d91b2"
+							   Text="Eye Color"/>
+					<TextBox Grid.Column="0"
+							 FontSize="20"
+							 Watermark="Color"
+							 Margin="0, 0, 0, 10"/>
+				</StackPanel>
+				<!-- Fur Color(s) -->
+				<StackPanel Grid.Column="0"
+							Grid.Row="2"
+							Margin="20, 0">
+					<TextBlock Grid.Column="0"
+							   FontSize="24"
+							   Foreground="#4d91b2"
+							   Text="Fur Color(s)"/>
+					<TextBox Grid.Column="0"
+							 FontSize="20"
+							 Watermark="Color(s)"
+							 Margin="0, 0, 0, 10"/>
+				</StackPanel>
+				<!-- Bio -->
+				<Grid Grid.Column="0"
+					  Grid.Row="3"
+					  RowDefinitions="Auto, *"
+					  Margin="20">
+					<TextBlock Grid.Row="0"
+							   FontSize="24"
+							   Foreground="#4d91b2"
+							   Text="Bio"/>
+					<TextBox Grid.Row="1"
+							 FontSize="20"
+							 FontStyle="Italic"
+							 Watermark="Bio"
+							 VerticalAlignment="Stretch"
+							 AcceptsReturn="True"
+							 TextWrapping="Wrap"/>
+				</Grid>
+				<!-- Right Column -->
+				<!-- Type -->
+				<Border Grid.Column="1"
+						Grid.Row="0"
 						Background="#D2DDE1"
 						BorderBrush="#D2DDE1"
-						BorderThickness="15"
-						CornerRadius="25"
-						Margin="35, 35, 35, 0"
-						HorizontalAlignment="Center">
-						<Border
-							ClipToBounds="True"
-							CornerRadius="25">
-							<Image
-								Stretch="Uniform"
-								Source="/Assets/portrait-placeholder.png"/>
-						</Border>
-					</Border>
-					<!-- Name -->
-					<TextBox
-						TextWrapping="Wrap"
-						FontSize="28"
-						FontWeight="Bold"
-						Watermark="Name"
-						Margin="20, 10, 20, 0"/>
-					<!-- Species | Age | Sex -->
-					<Grid
-						ColumnDefinitions="2*, Auto, *, Auto, *,"
-						Margin="20, 0">
-						<TextBox
-							Grid.Column="0"
-							TextWrapping="Wrap"
-							FontSize="20"
-							Watermark="Species"/>
-						<TextBlock
-							Grid.Column="1"
-							TextWrapping="Wrap"
-							FontSize="20"
-							VerticalAlignment="Center"
-							HorizontalAlignment="Center"
-							Text="-"/>
-						<TextBox
-							Grid.Column="2"
-							FontSize="20"
-							Watermark="Age"/>
-						<TextBlock
-							Grid.Column="3"
-							FontSize="20"
-							VerticalAlignment="Center"
-							HorizontalAlignment="Center"
-							Text="-"/>
-						<!-- TODO: Make this a drop-down? -->
-						<TextBox
-							Grid.Column="4"
-							TextWrapping="Wrap"
-							FontSize="20"
-							Watermark="Sex"/>
-					</Grid>
-				</StackPanel>
-				<!-- Right-Hand Info -->
-				<Grid Grid.Column="2"
-					  ShowGridLines="True"
-					  ColumnDefinitions="2*, *"
-					  RowDefinitions="Auto, Auto, Auto, *">
-					<!-- Left Column -->
-					<!-- Owner -->
-					<StackPanel Grid.Column="0"
+						BorderThickness="10, 5"
+						CornerRadius="10"
+						VerticalAlignment="Center"
+						HorizontalAlignment="Stretch"
+						Margin="20, 10">
+					<StackPanel Grid.Column="1"
 								Grid.Row="0"
-								Margin="20, 10, 20, 20">
-						<TextBlock Grid.Column="0"
-								   FontSize="28"
-								   Foreground="#4d91b2"
-								   Text="Owner"
-								   />
-						<TextBox Grid.Column="0"
-								 FontSize="20"
-								 FontStyle="Italic"
-								 Watermark="Owner"
-								 Margin="0, 0, 0, 0"/>
-					</StackPanel>
-					<!-- Eye Color -->
-					<StackPanel Grid.Column="0"
-								Grid.Row="1"
 								Margin="20, 0">
 						<TextBlock Grid.Column="0"
-								   FontSize="24"
-								   Foreground="#4d91b2"
-								   Text="Eye Color"/>
+								   FontSize="20"
+								   FontWeight="Bold"
+								   HorizontalAlignment="Center"
+								   Text="Type"/>
 						<TextBox Grid.Column="0"
-								 FontSize="20"
-								 Watermark="Color"
+								 FontSize="16"
+								 Watermark="Type"
+								 HorizontalContentAlignment="Center"
 								 Margin="0, 0, 0, 10"/>
 					</StackPanel>
-					<!-- Fur Color(s) -->
-					<StackPanel Grid.Column="0"
-								Grid.Row="2"
-								Margin="20, 0">
-						<TextBlock Grid.Column="0"
-								   FontSize="24"
-								   Foreground="#4d91b2"
-								   Text="Fur Color(s)"/>
-						<TextBox Grid.Column="0"
-								 FontSize="20"
-								 Watermark="Color(s)"
-								 Margin="0, 0, 0, 10"/>
-					</StackPanel>
-					<!-- Bio -->
-					<Grid Grid.Column="0"
-						  Grid.Row="3"
-						  RowDefinitions="Auto, *"
-						  Margin="20">
-						<TextBlock Grid.Row="0"
-								   FontSize="24"
-								   Foreground="#4d91b2"
-								   Text="Bio"/>
-						<TextBox Grid.Row="1"
-								 FontSize="20"
-								 FontStyle="Italic"
-								 Watermark="Bio"
-								 VerticalAlignment="Stretch"
-								 AcceptsReturn="True"
-								 TextWrapping="Wrap"/>
-					</Grid>
-					<!-- Right Column -->
-					<!-- Type -->
-					<Border Grid.Column="1"
-							Grid.Row="0"
-							Background="#D2DDE1"
-							BorderBrush="#D2DDE1"
-							BorderThickness="10, 5"
-							CornerRadius="10"
-							VerticalAlignment="Center"
-							HorizontalAlignment="Stretch"
-							Margin="20, 10">
-						<StackPanel Grid.Column="1"
-									Grid.Row="0"
-									Margin="20, 0">
-							<TextBlock Grid.Column="0"
-									   FontSize="20"
-									   FontWeight="Bold"
-									   HorizontalAlignment="Center"
-									   Text="Type"/>
-							<TextBox Grid.Column="0"
-									 FontSize="16"
-									 Watermark="Type"
-									 HorizontalContentAlignment="Center"
-									 Margin="0, 0, 0, 10"/>
-						</StackPanel>
+				</Border>
+				<!-- Height -->
+				<StackPanel Grid.Column="1"
+							Grid.Row="1"
+							Margin="20, 0">
+					<TextBlock Grid.Column="0"
+							   FontSize="24"
+							   Foreground="#4d91b2"
+							   Text="Height"/>
+					<TextBox Grid.Column="0"
+							 FontSize="20"
+							 Watermark="Height"
+							 Margin="0, 0, 0, 10"/>
+				</StackPanel>
+				<!-- Weight -->
+				<StackPanel Grid.Column="1"
+							Grid.Row="2"
+							Margin="20, 0">
+					<TextBlock Grid.Column="0"
+							   FontSize="24"
+							   Foreground="#4d91b2"
+							   Text="Weight"/>
+					<TextBox Grid.Column="0"
+							 FontSize="20"
+							 Watermark="Weight"
+							 Margin="0, 0, 0, 10"/>
+				</StackPanel>
+				<!-- QR Code -->
+				<Border Grid.Column="1"
+						Grid.Row="3"
+						Background="#D2DDE1"
+						BorderBrush="#D2DDE1"
+						BorderThickness="5"
+						CornerRadius="10"
+						Margin="20"
+						HorizontalAlignment="Center"
+						VerticalAlignment="Center">
+					<Border
+						ClipToBounds="True">
+						<Image
+							Stretch="Uniform"
+							Source="/Assets/qr-placeholder.png"/>
 					</Border>
-					<!-- Height -->
-					<StackPanel Grid.Column="1"
-								Grid.Row="1"
-								Margin="20, 0">
-						<TextBlock Grid.Column="0"
-								   FontSize="24"
-								   Foreground="#4d91b2"
-								   Text="Height"/>
-						<TextBox Grid.Column="0"
-								 FontSize="20"
-								 Watermark="Height"
-								 Margin="0, 0, 0, 10"/>
-					</StackPanel>
-					<!-- Weight -->
-					<StackPanel Grid.Column="1"
-								Grid.Row="2"
-								Margin="20, 0">
-						<TextBlock Grid.Column="0"
-								   FontSize="24"
-								   Foreground="#4d91b2"
-								   Text="Weight"/>
-						<TextBox Grid.Column="0"
-								 FontSize="20"
-								 Watermark="Weight"
-								 Margin="0, 0, 0, 10"/>
-					</StackPanel>
-					<!-- QR Code -->
-					<Border Grid.Column="1"
-							Grid.Row="3"
-							Background="#D2DDE1"
-							BorderBrush="#D2DDE1"
-							BorderThickness="5"
-							CornerRadius="10"
-							Margin="20"
-							HorizontalAlignment="Center"
-							VerticalAlignment="Center">
-						<Border
-							ClipToBounds="True">
-							<Image
-								Stretch="Uniform"
-								Source="/Assets/qr-placeholder.png"/>
-						</Border>
-					</Border>
-				</Grid>
+				</Border>
 			</Grid>
-		</DockPanel>
+		</Grid>
+	</DockPanel>
 </UserControl>
