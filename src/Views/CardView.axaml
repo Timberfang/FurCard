@@ -43,7 +43,8 @@
 		<!-- Main Content -->
 		<Grid
 			ColumnDefinitions="*, 2*"
-			ShowGridLines="False">
+			ShowGridLines="False"
+			ClipToBounds="True">
 
 			<!-- Left Side -->
 			<Border
