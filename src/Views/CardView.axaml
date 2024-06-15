@@ -107,7 +107,7 @@
 			</StackPanel>
 			<!-- Right-Hand Info -->
 			<Grid Grid.Column="2"
-				  ShowGridLines="True"
+				  ShowGridLines="False"
 				  ColumnDefinitions="2*, *"
 				  RowDefinitions="Auto, Auto, Auto, *">
 				<!-- Left Column -->
