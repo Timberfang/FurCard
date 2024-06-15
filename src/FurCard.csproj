@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <AvaloniaResource Remove="Assets\AtomTheme.axaml" />
+    <AvaloniaResource Remove="Assets\FluentFurTheme.axaml" />
   </ItemGroup>
 
   <ItemGroup>
@@ -28,9 +28,5 @@
 
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\CardView.axaml" />
-  </ItemGroup>
-
-  <ItemGroup>
-    <UpToDateCheckInput Remove="Assets\AtomTheme.axaml" />
   </ItemGroup>
 </Project>
