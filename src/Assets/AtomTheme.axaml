@@ -1,6 +1,9 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+					xmlns:System="clr-namespace:System;assembly=mscorlib">
 	<!-- Add Resources Here -->
+
+	<System:Double x:Key="TitleFontSize">32</System:Double>
 
 	<ResourceDictionary.ThemeDictionaries>
 		<!-- Light Theme - Adapted from Atom's one-light-synxtax (https://github.com/atom/one-light-syntax)
