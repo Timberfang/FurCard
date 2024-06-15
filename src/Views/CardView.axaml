@@ -13,19 +13,20 @@
 		<Border
 			DockPanel.Dock="Top"
 			Height="75"
-			Background="#516D7A">
+			Background="{DynamicResource AccentColor}">
 			<TextBlock
 				VerticalAlignment="Center"
 				HorizontalAlignment="Center"
 				FontSize="35"
 				FontWeight="Bold"
+				Foreground="{DynamicResource MainTextColor}"
 				Text="Furry ID Card 🐾"/>
 		</Border>
 		<!-- Bottom Border -->
 		<Border
 			DockPanel.Dock="Bottom"
 			Height="75"
-			Background="#516D7A">
+			Background="{DynamicResource AccentColor}">
 			<!-- TODO: Bind LICENSE ID to a GUID variable -->
 			<TextBlock
 				VerticalAlignment="Bottom"
@@ -33,6 +34,7 @@
 				FontSize="20"
 				FontWeight="Bold"
 				Margin="15"
+				Foreground="{DynamicResource MainTextColor}"
 				Text="License ID 15280229-fc88-43c0-bfaa-2da1ece62e51"/>
 		</Border>
 		<Grid
@@ -41,15 +43,15 @@
 			<!-- Divider -->
 			<Rectangle
 				Grid.Column="1"
-				Fill="#93ACB8"/>
+				Fill="{DynamicResource AccentColor}"/>
 			<!-- Left-Hand Info -->
 			<StackPanel
 				Grid.Column="0"
 				Spacing="10">
 				<!-- Profile Picture -->
 				<Border
-					Background="#D2DDE1"
-					BorderBrush="#D2DDE1"
+					Background="{DynamicResource AccentColor}"
+					BorderBrush="{DynamicResource BorderColor}"
 					BorderThickness="15"
 					CornerRadius="25"
 					Margin="35, 35, 35, 0"
@@ -115,7 +117,7 @@
 							Margin="20, 10, 20, 20">
 					<TextBlock Grid.Column="0"
 							   FontSize="28"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Owner"
 								   />
 					<TextBox Grid.Column="0"
@@ -130,7 +132,7 @@
 							Margin="20, 0">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Eye Color"/>
 					<TextBox Grid.Column="0"
 							 FontSize="20"
@@ -143,7 +145,7 @@
 							Margin="20, 0">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Fur Color(s)"/>
 					<TextBox Grid.Column="0"
 							 FontSize="20"
@@ -157,7 +159,7 @@
 					  Margin="20">
 					<TextBlock Grid.Row="0"
 							   FontSize="24"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Bio"/>
 					<TextBox Grid.Row="1"
 							 FontSize="20"
@@ -171,13 +173,11 @@
 				<!-- Type -->
 				<Border Grid.Column="1"
 						Grid.Row="0"
-						Background="#D2DDE1"
-						BorderBrush="#D2DDE1"
-						BorderThickness="10, 5"
+						Background="{DynamicResource AccentColor}"
 						CornerRadius="10"
 						VerticalAlignment="Center"
 						HorizontalAlignment="Stretch"
-						Margin="20, 10">
+						Margin="20, 0">
 					<StackPanel Grid.Column="1"
 								Grid.Row="0"
 								Margin="20, 0">
@@ -185,6 +185,7 @@
 								   FontSize="20"
 								   FontWeight="Bold"
 								   HorizontalAlignment="Center"
+								   Foreground="{DynamicResource MainTextColor}"
 								   Text="Type"/>
 						<TextBox Grid.Column="0"
 								 FontSize="16"
@@ -199,7 +200,7 @@
 							Margin="20, 0">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Height"/>
 					<TextBox Grid.Column="0"
 							 FontSize="20"
@@ -212,7 +213,7 @@
 							Margin="20, 0">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
-							   Foreground="#4d91b2"
+							   Foreground="{DynamicResource AccentTextColor}"
 							   Text="Weight"/>
 					<TextBox Grid.Column="0"
 							 FontSize="20"
@@ -222,8 +223,8 @@
 				<!-- QR Code -->
 				<Border Grid.Column="1"
 						Grid.Row="3"
-						Background="#D2DDE1"
-						BorderBrush="#D2DDE1"
+						Background="{DynamicResource AccentColor}"
+						BorderBrush="{DynamicResource BorderColor}"
 						BorderThickness="5"
 						CornerRadius="10"
 						Margin="20"

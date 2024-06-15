@@ -10,18 +10,22 @@
         Icon="/Assets/avalonia-logo.ico"
         Title="FurCard"
 		MinWidth="280"
-		MinHeight="220">
+		MinHeight="220"
+		Background="{DynamicResource BackgroundColor}">
 
 	<Window.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.ThemeDictionaries>
 				<ResourceDictionary x:Key='Light'>
-					<SolidColorBrush x:Key='BackgroundBrush'>#DDDDDD</SolidColorBrush>
-					<SolidColorBrush x:Key='BorderBrush'>#333333</SolidColorBrush>
+					<SolidColorBrush x:Key='BackgroundColor'>#DDDDDD</SolidColorBrush>
+					<SolidColorBrush x:Key='AccentColor'>#333333</SolidColorBrush>
 				</ResourceDictionary>
 				<ResourceDictionary x:Key='Dark'>
-					<SolidColorBrush x:Key='BackgroundBrush'>#222222</SolidColorBrush>
-					<SolidColorBrush x:Key='BorderBrush'>#555555</SolidColorBrush>
+					<SolidColorBrush x:Key='BackgroundColor'>#282c34</SolidColorBrush>
+					<SolidColorBrush x:Key='AccentColor'>#353b45</SolidColorBrush>
+					<SolidColorBrush x:Key='BorderColor'>#4e5565</SolidColorBrush>
+					<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
+					<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
 				</ResourceDictionary>
 			</ResourceDictionary.ThemeDictionaries>
 		</ResourceDictionary>
