@@ -1,0 +1,70 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<!-- Add Resources Here -->
+
+	<ResourceDictionary.ThemeDictionaries>
+		<!-- Light Theme - Adapted from Atom's one-light-synxtax (https://github.com/atom/one-light-syntax)
+		 Original License:
+			Copyright (c) 2016 GitHub Inc.
+
+			Permission is hereby granted, free of charge, to any person obtaining
+			a copy of this software and associated documentation files (the
+			"Software"), to deal in the Software without restriction, including
+			without limitation the rights to use, copy, modify, merge, publish,
+			distribute, sublicense, and/or sell copies of the Software, and to
+			permit persons to whom the Software is furnished to do so, subject to
+			the following conditions:
+			
+			The above copyright notice and this permission notice shall be
+			included in all copies or substantial portions of the Software.
+			
+			THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+			EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+			MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+			NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+			LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+			OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+		-->
+		<ResourceDictionary x:Key='Light'>
+			<SolidColorBrush x:Key='BackgroundColor'>#fafafa</SolidColorBrush>
+			<SolidColorBrush x:Key='PrimaryAccentColor'>#2e3038</SolidColorBrush>
+			<SolidColorBrush x:Key='SecondaryAccentColor'>#e3e4e8</SolidColorBrush>
+			<SolidColorBrush x:Key='BorderColor'>#5e616e</SolidColorBrush>
+			<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
+			<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
+		</ResourceDictionary>
+
+		<!-- Dark Theme - Adapted from Atom's one-dark-synxtax (https://github.com/atom/one-dark-syntax)
+		 Original License:
+			Copyright (c) 2016 GitHub Inc.
+
+			Permission is hereby granted, free of charge, to any person obtaining
+			a copy of this software and associated documentation files (the
+			"Software"), to deal in the Software without restriction, including
+			without limitation the rights to use, copy, modify, merge, publish,
+			distribute, sublicense, and/or sell copies of the Software, and to
+			permit persons to whom the Software is furnished to do so, subject to
+			the following conditions:
+			
+			The above copyright notice and this permission notice shall be
+			included in all copies or substantial portions of the Software.
+			
+			THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
+			EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+			MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+			NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
+			LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
+			OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
+			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
+		-->
+		<ResourceDictionary x:Key='Dark'>
+			<SolidColorBrush x:Key='BackgroundColor'>#282c34</SolidColorBrush>
+			<SolidColorBrush x:Key='PrimaryAccentColor'>#353b45</SolidColorBrush>
+			<SolidColorBrush x:Key='SecondaryAccentColor'>#454a54</SolidColorBrush>
+			<SolidColorBrush x:Key='BorderColor'>#4e5565</SolidColorBrush>
+			<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
+			<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
+		</ResourceDictionary>
+	</ResourceDictionary.ThemeDictionaries>
+</ResourceDictionary>
