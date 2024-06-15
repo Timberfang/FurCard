@@ -39,7 +39,8 @@
 		</Border>
 		<Grid
 			ShowGridLines="False"
-			ColumnDefinitions="*, 25, 2*">
+			ColumnDefinitions="*, 25, 2*"
+			ClipToBounds="True">
 			<!-- Divider -->
 			<Rectangle
 				Grid.Column="1"
