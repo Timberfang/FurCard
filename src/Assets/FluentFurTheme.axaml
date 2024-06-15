@@ -34,12 +34,12 @@
 			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		-->
 		<ResourceDictionary x:Key='Light'>
-			<SolidColorBrush x:Key='AtomBackgroundBrush'>#fafafa</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush1'>#2e3038</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush2'>#e3e4e8</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush3'>#5e616e</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomTextBrush1'>#abb9bf</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomTextBrush2'>#7aa3b8</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurBackgroundBrush'>#fafafa</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush1'>#2e3038</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush2'>#e3e4e8</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush3'>#5e616e</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurTextBrush1'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurTextBrush2'>#7aa3b8</SolidColorBrush>
 		</ResourceDictionary>
 
 		<!-- Dark Theme - Adapted from Atom's one-dark-synxtax (https://github.com/atom/one-dark-syntax)
@@ -66,12 +66,12 @@
 			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		-->
 		<ResourceDictionary x:Key='Dark'>
-			<SolidColorBrush x:Key='AtomBackgroundBrush'>#282c34</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush1'>#353b45</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush2'>#454a54</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomAccentBrush3'>#4e5565</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomTextBrush1'>#abb9bf</SolidColorBrush>
-			<SolidColorBrush x:Key='AtomTextBrush2'>#7aa3b8</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurBackgroundBrush'>#282c34</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush1'>#353b45</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush2'>#454a54</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurAccentBrush3'>#4e5565</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurTextBrush1'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='FluentFurTextBrush2'>#7aa3b8</SolidColorBrush>
 		</ResourceDictionary>
 	</ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>
