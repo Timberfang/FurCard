@@ -55,6 +55,7 @@
 
 				</StackPanel>
 			</Border>
+
 			<!-- Right Side-->
 			<Border
 				Grid.Column="1"
@@ -63,7 +64,7 @@
 				Padding="20, 0">
 				<Grid
 					ColumnDefinitions="3*, *"
-					ShowGridLines="True">
+					ShowGridLines="False">
 
 				</Grid>
 			</Border>
