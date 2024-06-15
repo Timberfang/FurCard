@@ -233,8 +233,8 @@
 						BorderThickness="10"
 						CornerRadius="10"
 						Margin="20"
-						HorizontalAlignment="Center"
-						VerticalAlignment="Center">
+						HorizontalAlignment="Right"
+						VerticalAlignment="Bottom">
 					<Border
 						ClipToBounds="True">
 						<Image
