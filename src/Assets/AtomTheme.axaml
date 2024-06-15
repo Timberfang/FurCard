@@ -1,9 +1,13 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
 					xmlns:System="clr-namespace:System;assembly=mscorlib">
-	<!-- Add Resources Here -->
 
-	<System:Double x:Key="TitleFontSize">32</System:Double>
+	<!-- Font Sizes -->
+	<System:Double x:Key="TitleFontSize">36</System:Double>
+	<System:Double x:Key="Header1FontSize">28</System:Double>
+	<System:Double x:Key="Header2FontSize">24</System:Double>
+	<System:Double x:Key="ContentFontSize">20</System:Double>
+	<System:Double x:Key="AccentFontSize">16</System:Double>
 
 	<ResourceDictionary.ThemeDictionaries>
 		<!-- Light Theme - Adapted from Atom's one-light-synxtax (https://github.com/atom/one-light-syntax)
@@ -30,12 +34,12 @@
 			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		-->
 		<ResourceDictionary x:Key='Light'>
-			<SolidColorBrush x:Key='BackgroundColor'>#fafafa</SolidColorBrush>
-			<SolidColorBrush x:Key='PrimaryAccentColor'>#2e3038</SolidColorBrush>
-			<SolidColorBrush x:Key='SecondaryAccentColor'>#e3e4e8</SolidColorBrush>
-			<SolidColorBrush x:Key='BorderColor'>#5e616e</SolidColorBrush>
-			<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
-			<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomBackgroundBrush'>#fafafa</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush1'>#2e3038</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush2'>#e3e4e8</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush3'>#5e616e</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomTextBrush1'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomTextBrush2'>#7aa3b8</SolidColorBrush>
 		</ResourceDictionary>
 
 		<!-- Dark Theme - Adapted from Atom's one-dark-synxtax (https://github.com/atom/one-dark-syntax)
@@ -62,12 +66,12 @@
 			WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
 		-->
 		<ResourceDictionary x:Key='Dark'>
-			<SolidColorBrush x:Key='BackgroundColor'>#282c34</SolidColorBrush>
-			<SolidColorBrush x:Key='PrimaryAccentColor'>#353b45</SolidColorBrush>
-			<SolidColorBrush x:Key='SecondaryAccentColor'>#454a54</SolidColorBrush>
-			<SolidColorBrush x:Key='BorderColor'>#4e5565</SolidColorBrush>
-			<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
-			<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomBackgroundBrush'>#282c34</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush1'>#353b45</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush2'>#454a54</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomAccentBrush3'>#4e5565</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomTextBrush1'>#abb9bf</SolidColorBrush>
+			<SolidColorBrush x:Key='AtomTextBrush2'>#7aa3b8</SolidColorBrush>
 		</ResourceDictionary>
 	</ResourceDictionary.ThemeDictionaries>
 </ResourceDictionary>

@@ -7,10 +7,29 @@
 
 	<!-- TODO: Find a way to handle resizing of resources nicely -->
 	<DockPanel>
-		<TextBlock
-			Text="Hello World!"
+		<StackPanel
 			HorizontalAlignment="Center"
-			VerticalAlignment="Center"
-			FontSize="{StaticResource TitleFontSize}"/>
+			VerticalAlignment="Center">
+			<TextBlock
+				Text="Title"
+				HorizontalAlignment="Center"
+				FontSize="{StaticResource TitleFontSize}"/>
+			<TextBlock
+				Text="Header 1"
+				HorizontalAlignment="Center"
+				FontSize="{StaticResource Header1FontSize}"/>
+			<TextBlock
+				Text="Header 2"
+				HorizontalAlignment="Center"
+				FontSize="{StaticResource Header2FontSize}"/>
+			<TextBlock
+				Text="Content"
+				HorizontalAlignment="Center"
+				FontSize="{StaticResource ContentFontSize}"/>
+			<TextBlock
+				Text="Accent"
+				HorizontalAlignment="Center"
+				FontSize="{StaticResource AccentFontSize}"/>
+		</StackPanel>
 	</DockPanel>
 </UserControl>
