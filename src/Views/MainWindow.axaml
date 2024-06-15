@@ -11,18 +11,24 @@
         Title="FurCard"
 		MinWidth="280"
 		MinHeight="220"
-		Background="{DynamicResource BackgroundColor}">
+		Background="{DynamicResource BackgroundColor}"
+		RequestedThemeVariant="Default">
 
 	<Window.Resources>
 		<ResourceDictionary>
 			<ResourceDictionary.ThemeDictionaries>
 				<ResourceDictionary x:Key='Light'>
-					<SolidColorBrush x:Key='BackgroundColor'>#DDDDDD</SolidColorBrush>
-					<SolidColorBrush x:Key='AccentColor'>#333333</SolidColorBrush>
+					<SolidColorBrush x:Key='BackgroundColor'>#fafafa</SolidColorBrush>
+					<SolidColorBrush x:Key='PrimaryAccentColor'>#2e3038</SolidColorBrush>
+					<SolidColorBrush x:Key='SecondaryAccentColor'>#e3e4e8</SolidColorBrush>
+					<SolidColorBrush x:Key='BorderColor'>#5e616e</SolidColorBrush>
+					<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
+					<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>
 				</ResourceDictionary>
 				<ResourceDictionary x:Key='Dark'>
 					<SolidColorBrush x:Key='BackgroundColor'>#282c34</SolidColorBrush>
-					<SolidColorBrush x:Key='AccentColor'>#353b45</SolidColorBrush>
+					<SolidColorBrush x:Key='PrimaryAccentColor'>#353b45</SolidColorBrush>
+					<SolidColorBrush x:Key='SecondaryAccentColor'>#454a54</SolidColorBrush>
 					<SolidColorBrush x:Key='BorderColor'>#4e5565</SolidColorBrush>
 					<SolidColorBrush x:Key='AccentTextColor'>#7aa3b8</SolidColorBrush>
 					<SolidColorBrush x:Key='MainTextColor'>#abb9bf</SolidColorBrush>

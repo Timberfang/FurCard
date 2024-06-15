@@ -13,7 +13,7 @@
 		<Border
 			DockPanel.Dock="Top"
 			Height="75"
-			Background="{DynamicResource AccentColor}">
+			Background="{DynamicResource PrimaryAccentColor}">
 			<TextBlock
 				VerticalAlignment="Center"
 				HorizontalAlignment="Center"
@@ -26,7 +26,7 @@
 		<Border
 			DockPanel.Dock="Bottom"
 			Height="75"
-			Background="{DynamicResource AccentColor}">
+			Background="{DynamicResource PrimaryAccentColor}">
 			<!-- TODO: Bind LICENSE ID to a GUID variable -->
 			<TextBlock
 				VerticalAlignment="Bottom"
@@ -43,14 +43,14 @@
 			<!-- Divider -->
 			<Rectangle
 				Grid.Column="1"
-				Fill="{DynamicResource AccentColor}"/>
+				Fill="{DynamicResource SecondaryAccentColor}"/>
 			<!-- Left-Hand Info -->
 			<StackPanel
 				Grid.Column="0"
 				Spacing="10">
 				<!-- Profile Picture -->
 				<Border
-					Background="{DynamicResource AccentColor}"
+					Background="{DynamicResource PrimaryAccentColor}"
 					BorderBrush="{DynamicResource BorderColor}"
 					BorderThickness="15"
 					CornerRadius="25"
@@ -176,7 +176,7 @@
 				<!-- Type -->
 				<Border Grid.Column="1"
 						Grid.Row="0"
-						Background="{DynamicResource AccentColor}"
+						Background="{DynamicResource SecondaryAccentColor}"
 						CornerRadius="10"
 						VerticalAlignment="Center"
 						HorizontalAlignment="Stretch"
@@ -229,7 +229,7 @@
 				<!-- QR Code -->
 				<Border Grid.Column="1"
 						Grid.Row="3"
-						Background="{DynamicResource AccentColor}"
+						Background="{DynamicResource PrimaryAccentColor}"
 						BorderBrush="{DynamicResource BorderColor}"
 						BorderThickness="10"
 						CornerRadius="10"
