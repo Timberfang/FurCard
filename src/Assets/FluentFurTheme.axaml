@@ -3,7 +3,7 @@
 					xmlns:System="clr-namespace:System;assembly=mscorlib">
 
 	<!-- Font Sizes -->
-	<System:Double x:Key="TitleFontSize">36</System:Double>
+	<System:Double x:Key="TitleFontSize">32</System:Double>
 	<System:Double x:Key="Header1FontSize">28</System:Double>
 	<System:Double x:Key="Header2FontSize">24</System:Double>
 	<System:Double x:Key="ContentFontSize">20</System:Double>

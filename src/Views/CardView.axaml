@@ -2,34 +2,70 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-             mc:Ignorable="d" d:DesignWidth="1020" d:DesignHeight="640"
+             mc:Ignorable="d" d:DesignWidth="750" d:DesignHeight="500"
              x:Class="FurCard.Views.CardView">
 
 	<!-- TODO: Find a way to handle resizing of resources nicely -->
 	<DockPanel>
-		<StackPanel
-			HorizontalAlignment="Center"
-			VerticalAlignment="Center">
+		<!-- Top Bar -->
+		<Grid
+			DockPanel.Dock="Top"
+			ColumnDefinitions="*, Auto, *"
+			Height="60"
+			Background="{DynamicResource FluentFurAccentBrush1}">
 			<TextBlock
-				Text="Title"
+				Grid.Column="1"
+				VerticalAlignment="Center"
 				HorizontalAlignment="Center"
-				FontSize="{StaticResource TitleFontSize}"/>
+				FontSize="{StaticResource TitleFontSize}"
+				FontWeight="Bold"
+				Foreground="{DynamicResource FluentFurTextBrush1}"
+				Text="Furry ID Card"/>
+		</Grid>
+
+		<!-- Bottom Bar -->
+		<Grid
+			DockPanel.Dock="Bottom"
+			ColumnDefinitions="Auto, *"
+			Height="60"
+			Background="{DynamicResource FluentFurAccentBrush1}">
 			<TextBlock
-				Text="Header 1"
+				Grid.Column="0"
+				VerticalAlignment="Center"
 				HorizontalAlignment="Center"
-				FontSize="{StaticResource Header1FontSize}"/>
-			<TextBlock
-				Text="Header 2"
-				HorizontalAlignment="Center"
-				FontSize="{StaticResource Header2FontSize}"/>
-			<TextBlock
-				Text="Content"
-				HorizontalAlignment="Center"
-				FontSize="{StaticResource ContentFontSize}"/>
-			<TextBlock
-				Text="Accent"
-				HorizontalAlignment="Center"
-				FontSize="{StaticResource AccentFontSize}"/>
-		</StackPanel>
+				Margin="50, 0"
+				FontSize="{StaticResource AccentFontSize}"
+				FontWeight="Bold"
+				Foreground="{DynamicResource FluentFurTextBrush1}"
+				Text="License ID: 15280229-fc88-43c0-bfaa-2da1ece62e51"/>
+		</Grid>
+
+		<!-- Main Content -->
+		<Grid
+			ColumnDefinitions="*, 2*"
+			ShowGridLines="False">
+
+			<!-- Left Side -->
+			<Border
+				Grid.Column="0"
+				Background="{DynamicResource FluentFurAccentBrush2}"
+				Padding="20, 0">
+				<StackPanel>
+
+				</StackPanel>
+			</Border>
+			<!-- Right Side-->
+			<Border
+				Grid.Column="1"
+				BorderBrush="{DynamicResource FluentFurAccentBrush1}"
+				BorderThickness="2, 0, 0, 0"
+				Padding="20, 0">
+				<Grid
+					ColumnDefinitions="3*, *"
+					ShowGridLines="True">
+
+				</Grid>
+			</Border>
+		</Grid>
 	</DockPanel>
 </UserControl>
