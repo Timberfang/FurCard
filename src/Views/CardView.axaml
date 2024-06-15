@@ -51,8 +51,30 @@
 				Grid.Column="0"
 				Background="{DynamicResource FluentFurAccentBrush2}"
 				Padding="20, 0">
-				<StackPanel>
+				<StackPanel
+					HorizontalAlignment="Center"
+					Margin="20"
+					Spacing="10">
 
+					<!-- Profile Picture -->
+					<Border
+						BorderBrush="{DynamicResource FluentFurAccentBrush3}"
+						BorderThickness="10"
+						CornerRadius="25"
+						ClipToBounds="True">
+						<Border
+							CornerRadius="25"
+							ClipToBounds="True">
+							<Image Source="/Assets/portrait-placeholder.png"/>
+						</Border>
+					</Border>
+
+					<!-- Name -->
+					<TextBox
+						FontSize="{StaticResource Header2FontSize}"
+						VerticalAlignment="Center"
+						FontWeight="Bold"
+						Watermark="Name"/>
 				</StackPanel>
 			</Border>
 
