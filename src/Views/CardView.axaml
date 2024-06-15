@@ -5,10 +5,8 @@
              mc:Ignorable="d" d:DesignWidth="1016" d:DesignHeight="638"
              x:Class="FurCard.Views.CardView">
 
-	<!-- TODO: Replace hardcoded colors with dynamic resources -->
 	<!-- TODO: Find a way to handle resizing of resources nicely -->
 	<DockPanel>
-		<!-- TODO: Change to a control other than a border -->
 		<!-- Top Border -->
 		<Border
 			DockPanel.Dock="Top"
