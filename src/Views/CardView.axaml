@@ -97,7 +97,6 @@
 						VerticalAlignment="Center"
 						HorizontalAlignment="Center"
 						Text="-"/>
-					<!-- TODO: Make this a drop-down? -->
 					<TextBox
 						Grid.Column="4"
 						TextWrapping="Wrap"
