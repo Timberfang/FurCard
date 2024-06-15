@@ -113,7 +113,8 @@
 				<!-- Owner -->
 				<StackPanel Grid.Column="0"
 							Grid.Row="0"
-							Margin="20, 10, 20, 20">
+							Margin="20, 10, 20, 20"
+							Spacing="10">
 					<TextBlock Grid.Column="0"
 							   FontSize="28"
 							   Foreground="{DynamicResource AccentTextColor}"
@@ -128,7 +129,8 @@
 				<!-- Eye Color -->
 				<StackPanel Grid.Column="0"
 							Grid.Row="1"
-							Margin="20, 0">
+							Margin="20, 0"
+							Spacing="10">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
 							   Foreground="{DynamicResource AccentTextColor}"
@@ -141,7 +143,8 @@
 				<!-- Fur Color(s) -->
 				<StackPanel Grid.Column="0"
 							Grid.Row="2"
-							Margin="20, 0">
+							Margin="20, 0"
+							Spacing="10">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
 							   Foreground="{DynamicResource AccentTextColor}"
@@ -159,7 +162,8 @@
 					<TextBlock Grid.Row="0"
 							   FontSize="24"
 							   Foreground="{DynamicResource AccentTextColor}"
-							   Text="Bio"/>
+							   Text="Bio"
+							   Margin="0, 0, 0, 10"/>
 					<TextBox Grid.Row="1"
 							 FontSize="20"
 							 FontStyle="Italic"
@@ -179,7 +183,8 @@
 						Margin="20, 0">
 					<StackPanel Grid.Column="1"
 								Grid.Row="0"
-								Margin="20, 0">
+								Margin="10"
+								Spacing="10">
 						<TextBlock Grid.Column="0"
 								   FontSize="20"
 								   FontWeight="Bold"
@@ -190,13 +195,14 @@
 								 FontSize="16"
 								 Watermark="Type"
 								 HorizontalContentAlignment="Center"
-								 Margin="0, 0, 0, 10"/>
+								 Margin="20, 0"/>
 					</StackPanel>
 				</Border>
 				<!-- Height -->
 				<StackPanel Grid.Column="1"
 							Grid.Row="1"
-							Margin="20, 0">
+							Margin="20, 0"
+							Spacing="10">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
 							   Foreground="{DynamicResource AccentTextColor}"
@@ -209,7 +215,8 @@
 				<!-- Weight -->
 				<StackPanel Grid.Column="1"
 							Grid.Row="2"
-							Margin="20, 0">
+							Margin="20, 0"
+							Spacing="10">
 					<TextBlock Grid.Column="0"
 							   FontSize="24"
 							   Foreground="{DynamicResource AccentTextColor}"
@@ -224,13 +231,14 @@
 						Grid.Row="3"
 						Background="{DynamicResource AccentColor}"
 						BorderBrush="{DynamicResource BorderColor}"
-						BorderThickness="5"
+						BorderThickness="10"
 						CornerRadius="10"
 						Margin="20"
 						HorizontalAlignment="Center"
 						VerticalAlignment="Center">
 					<Border
-						ClipToBounds="True">
+						ClipToBounds="True"
+						Margin="0">
 						<Image
 							Stretch="Uniform"
 							Source="/Assets/qr-placeholder.png"/>
