@@ -236,8 +236,7 @@
 						HorizontalAlignment="Center"
 						VerticalAlignment="Center">
 					<Border
-						ClipToBounds="True"
-						Margin="0">
+						ClipToBounds="True">
 						<Image
 							Stretch="Uniform"
 							Source="/Assets/qr-placeholder.png"/>
