@@ -29,4 +29,10 @@
   <ItemGroup>
     <UpToDateCheckInput Remove="Views\CardView.axaml" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="Views\CharView.axaml.cs">
+      <DependentUpon>CharView.axaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
 </Project>

@@ -1,0 +1,122 @@
+<UserControl xmlns="https://github.com/avaloniaui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d" d:DesignWidth="450" d:DesignHeight="800"
+             x:Class="FurCard.Views.CharView">
+
+	<DockPanel>
+		<Grid
+			DockPanel.Dock="Top"
+			ColumnDefinitions="*, Auto, *"
+			Height="60"
+			Background="{DynamicResource FluentFurAccentBrush1}">
+		</Grid>
+
+		<Grid
+			DockPanel.Dock="Bottom"
+			ColumnDefinitions="Auto, *"
+			Height="60"
+			Background="{DynamicResource FluentFurAccentBrush1}">
+		</Grid>
+
+		<ScrollViewer>
+			<Grid
+						ShowGridLines="True"
+						ColumnDefinitions="*, Auto, *">
+				<StackPanel
+					Grid.Column="1"
+					Spacing="15"
+					Margin="25">
+
+					<!-- Profile Picture -->
+					<Border
+						CornerRadius="50"
+						BorderBrush="{DynamicResource FluentFurAccentBrush3}"
+						BorderThickness="10"
+						HorizontalAlignment="Center">
+						<Border
+							CornerRadius="50"
+							ClipToBounds="True">
+							<Image
+								Source="/Assets/portrait-placeholder.png"/>
+						</Border>
+					</Border>
+
+					<!-- Name -->
+					<TextBox
+						Margin="20, 0"
+						FontSize="{StaticResource Header2FontSize}"
+						TextWrapping="Wrap"
+						Width="300"
+						TextAlignment="Center"
+						Watermark="Name"/>
+					<Rectangle
+						Margin="40, 0"
+						Height="2"
+						Fill="{DynamicResource FluentFurAccentBrush3}"/>
+
+					<!-- Species -->
+					<TextBox
+						Margin="20, 0, 20, 25"
+						FontSize="{StaticResource ContentFontSize}"
+						Foreground="{DynamicResource FluentFurTextBrush2}"
+						TextWrapping="Wrap"
+						Width="150"
+						TextAlignment="Center"
+						Watermark="Species"/>
+
+					<Expander
+						Header="Basic Information"
+						FontSize="{StaticResource Header2FontSize}"
+						HorizontalAlignment="Center">
+						<Grid
+							ColumnDefinitions="Auto, *"
+							RowDefinitions="Auto, Auto, Auto, Auto">
+							<TextBlock
+								Grid.Column="0"
+								Grid.Row="0"
+								Text="Age"
+								Margin="10"/>
+							<TextBox
+								Grid.Column="1"
+								Grid.Row="0"
+								Watermark="Age"
+								Margin="10"/>
+							<TextBlock
+								Grid.Column="0"
+								Grid.Row="1"
+								Text="Sex"
+								Margin="10"/>
+							<TextBox
+								Grid.Column="1"
+								Grid.Row="1"
+								Watermark="Sex"
+								Margin="10"/>
+							<TextBlock
+								Grid.Column="0"
+								Grid.Row="2"
+								Text="Height"
+								Margin="10"/>
+							<TextBox
+								Grid.Column="1"
+								Grid.Row="2"
+								Watermark="Height"
+								Margin="10"/>
+							<TextBlock
+								Grid.Column="0"
+								Grid.Row="3"
+								Text="Weight"
+								Margin="10"/>
+							<TextBox
+								Grid.Column="1"
+								Grid.Row="3"
+								Watermark="Weight"
+								Margin="10"/>
+						</Grid>
+					</Expander>
+				</StackPanel>
+			</Grid>
+		</ScrollViewer>
+	</DockPanel>
+</UserControl>
