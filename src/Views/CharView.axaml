@@ -22,8 +22,8 @@
 
 		<ScrollViewer>
 			<Grid
-						ShowGridLines="True"
-						ColumnDefinitions="*, Auto, *">
+				ShowGridLines="True"
+				ColumnDefinitions="*, Auto, *">
 				<StackPanel
 					Grid.Column="1"
 					Spacing="15"
