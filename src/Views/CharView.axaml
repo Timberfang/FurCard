@@ -21,13 +21,17 @@
 		</Grid>
 
 		<ScrollViewer>
-			<Grid
-				ShowGridLines="True"
-				ColumnDefinitions="*, Auto, *">
+			<Border
+				Padding="75">
 				<StackPanel
-					Grid.Column="1"
-					Spacing="15"
-					Margin="25">
+					Orientation="Vertical"
+					Spacing="25"
+					HorizontalAlignment="Center"
+					VerticalAlignment="Top">
+
+					<!-- Left Column -->
+					<StackPanel
+						Spacing="15">
 
 					<!-- Profile Picture -->
 					<Border
@@ -67,10 +71,13 @@
 						TextAlignment="Center"
 						Watermark="Species"/>
 
+						<!-- Basic Information -->
 					<Expander
 						Header="Basic Information"
 						FontSize="{StaticResource Header2FontSize}"
-						HorizontalAlignment="Center">
+							HorizontalAlignment="Center"
+							Width="300"
+							IsExpanded="True">
 						<Grid
 							ColumnDefinitions="Auto, *"
 							RowDefinitions="Auto, Auto, Auto, Auto">
