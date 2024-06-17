@@ -34,7 +34,8 @@
 						CornerRadius="50"
 						BorderBrush="{DynamicResource FluentFurAccentBrush3}"
 						BorderThickness="10"
-						HorizontalAlignment="Center">
+							HorizontalAlignment="Center"
+							Width="225">
 						<Border
 							CornerRadius="50"
 							ClipToBounds="True">
