@@ -24,6 +24,7 @@
 			<Border
 				Padding="75">
 				<StackPanel
+					Name="MainView"
 					Orientation="Horizontal"
 					Spacing="50"
 					HorizontalAlignment="Center"
