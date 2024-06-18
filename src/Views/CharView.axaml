@@ -84,7 +84,8 @@
 							Margin="25, 0"
 							BorderBrush="#888"
 							BorderThickness="2"
-							CornerRadius="10">
+							CornerRadius="10"
+							Background="#F4F4F6">
 							<Grid
 								ColumnDefinitions="Auto, *"
 								RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
