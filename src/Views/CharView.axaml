@@ -25,7 +25,7 @@
 				Padding="75">
 				<StackPanel
 					Orientation="Horizontal"
-					Spacing="25"
+					Spacing="50"
 					HorizontalAlignment="Center"
 					VerticalAlignment="Top">
 
