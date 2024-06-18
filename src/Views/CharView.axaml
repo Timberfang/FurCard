@@ -72,57 +72,108 @@
 							Watermark="Species"/>
 
 						<!-- Basic Information -->
-						<Expander
-							Header="Basic Information"
-							FontSize="{StaticResource Header2FontSize}"
+						<TextBlock
+							FontSize="{StaticResource ContentFontSize}"
+							FontWeight="Bold"
+							Foreground="#4D7180"
+							VerticalAlignment="Center"
 							HorizontalAlignment="Center"
-							Width="300"
-							IsExpanded="True">
+							Text="About"/>
+						<Border
+							Padding="5, 0"
+							Margin="25, 0"
+							BorderBrush="#888"
+							BorderThickness="2"
+							CornerRadius="10">
 							<Grid
 								ColumnDefinitions="Auto, *"
-								RowDefinitions="Auto, Auto, Auto, Auto">
+								RowDefinitions="Auto, Auto, Auto, Auto, Auto, Auto">
 								<TextBlock
 									Grid.Column="0"
 									Grid.Row="0"
 									Text="Age"
-									Margin="10"/>
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBox
 									Grid.Column="1"
 									Grid.Row="0"
 									Watermark="Age"
-									Margin="10"/>
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBlock
 									Grid.Column="0"
 									Grid.Row="1"
-									Text="Sex"
-									Margin="10"/>
+									Text="Gender"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBox
 									Grid.Column="1"
 									Grid.Row="1"
-									Watermark="Sex"
-									Margin="10"/>
+									Watermark="Gender"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBlock
 									Grid.Column="0"
 									Grid.Row="2"
 									Text="Height"
-									Margin="10"/>
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBox
 									Grid.Column="1"
 									Grid.Row="2"
 									Watermark="Height"
-									Margin="10"/>
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBlock
 									Grid.Column="0"
 									Grid.Row="3"
-									Text="Weight"
-									Margin="10"/>
+									Text="Build"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 								<TextBox
 									Grid.Column="1"
 									Grid.Row="3"
-									Watermark="Weight"
-									Margin="10"/>
+									Watermark="Build"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
+								<TextBlock
+									Grid.Column="0"
+									Grid.Row="4"
+									Text="Eyes"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
+								<TextBox
+									Grid.Column="1"
+									Grid.Row="4"
+									Watermark="Color"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
+								<TextBlock
+									Grid.Column="0"
+									Grid.Row="5"
+									Text="Fur"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
+								<TextBox
+									Grid.Column="1"
+									Grid.Row="5"
+									Watermark="Color(s)"
+									Margin="10"
+									FontSize="18"
+									VerticalAlignment="Center"/>
 							</Grid>
-						</Expander>
+						</Border>
 					</StackPanel>
 
 					<!-- Right Column -->
